@@ -1,0 +1,23 @@
+[
+    {"id": 1, "question": "What does EC2 stand for?", "options": ["Elastic Compute Cloud", "Elastic Container Cloud", "Elastic Core Cloud", "Edge Compute Cloud"], "answer": "Elastic Compute Cloud"},
+    {"id": 2, "question": "Which AWS service is used for object storage?", "options": ["S3", "EBS", "EFS", "EC2"], "answer": "S3"},
+    {"id": 3, "question": "What is the purpose of IAM?", "options": ["User management", "Billing", "Monitoring", "Networking"], "answer": "User management"},
+    {"id": 4, "question": "Which service provides serverless computing in AWS?", "options": ["Lambda", "EC2", "EKS", "Fargate"], "answer": "Lambda"},
+    {"id": 5, "question": "Which service is used for hosting relational databases?", "options": ["RDS", "DynamoDB", "Redshift", "Aurora"], "answer": "RDS"},
+    {"id": 6, "question": "Which tool is used to monitor AWS resources?", "options": ["CloudWatch", "CloudTrail", "Inspector", "Config"], "answer": "CloudWatch"},
+    {"id": 7, "question": "What type of storage is Amazon Glacier used for?", "options": ["Archival", "Block", "Object", "File"], "answer": "Archival"},
+    {"id": 8, "question": "Which AWS service is best suited for CDN?", "options": ["CloudFront", "Route 53", "Direct Connect", "VPC"], "answer": "CloudFront"},
+    {"id": 9, "question": "Which service provides DNS management?", "options": ["Route 53", "CloudWatch", "CloudTrail", "Elastic Beanstalk"], "answer": "Route 53"},
+    {"id": 10, "question": "Which AWS database is NoSQL based?", "options": ["DynamoDB", "RDS", "Redshift", "Neptune"], "answer": "DynamoDB"},
+    {"id": 11, "question": "What is the function of VPC?", "options": ["Virtual Private Cloud", "Virtual Processing Cluster", "Verified Private Container", "None"], "answer": "Virtual Private Cloud"},
+    {"id": 12, "question": "Which AWS tool helps with automation of infrastructure?", "options": ["CloudFormation", "CloudFront", "Elastic Load Balancer", "SNS"], "answer": "CloudFormation"},
+    {"id": 13, "question": "What does S3 stand for?", "options": ["Simple Storage Service", "Secure Storage Service", "Serverless Storage Solution", "Standard Storage Service"], "answer": "Simple Storage Service"},
+    {"id": 14, "question": "What type of database is Redshift?", "options": ["Data warehouse", "Key-Value", "Graph", "Document"], "answer": "Data warehouse"},
+    {"id": 15, "question": "Which service is used for app deployment automation?", "options": ["Elastic Beanstalk", "CodeDeploy", "EC2", "CloudFormation"], "answer": "Elastic Beanstalk"},
+    {"id": 16, "question": "Which AWS service allows Docker container orchestration?", "options": ["ECS", "Lambda", "S3", "CloudFormation"], "answer": "ECS"},
+    {"id": 17, "question": "Which service is responsible for cost and usage reports?", "options": ["Cost Explorer", "CloudWatch", "IAM", "EC2"], "answer": "Cost Explorer"},
+    {"id": 18, "question": "What is Multi-AZ in RDS?", "options": ["High Availability", "Load Balancing", "Autoscaling", "Backup"], "answer": "High Availability"},
+    {"id": 19, "question": "Which AWS service handles hybrid cloud storage?", "options": ["Storage Gateway", "EBS", "S3", "EFS"], "answer": "Storage Gateway"},
+    {"id": 20, "question": "Which service offers managed Kubernetes?", "options": ["EKS", "ECS", "Fargate", "Lambda"], "answer": "EKS"}
+  ]
+  

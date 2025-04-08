@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Tool</title>
+</head>
+<body>
+    <h2>Welcome, {{ name }}</h2>
+    <form method="post" action="/start-exam">
+        <input type="hidden" name="name" value="{{ name }}">
+        <input type="hidden" name="age" value="{{ age }}">
+        <input type="hidden" name="gender" value="{{ gender }}">
+        <input type="hidden" name="email" value="{{ email }}">
+        <label>Select Tool:</label><br>
+        <select name="tool">
+            <option value="aws">AWS</option>
+            <option value="devops">DevOps</option>
+        </select><br><br>
+        <button type="submit">Attempt Exam</button>
+    </form>
+</body>
+</html>

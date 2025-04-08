@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam - {{ tool_name }}</title>
+    <script>
+        let timeLeft = 600;
+        function updateTimer() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            document.getElementById("timer").innerText = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            document.getElementById("progress").value = 600 - timeLeft;
+            if (timeLeft <= 0) document.getElementById("exam-form").submit();
+            timeLeft--;
+        }
+        setInterval(updateTimer, 1000);
+    </script>
+</head>
+<body>
+    <h2>{{ tool_name }} Exam</h2>
+    <p>Time Remaining: <span id="timer">10:00</span></p>
+    <progress id="progress" value="0" max="600" style="width: 100%;"></progress>
+    <form id="exam-form" method="post" action="/submit-exam">
+        {% for q in questions %}
+            <p><strong>{{ loop.index }}. {{ q.question }}</strong></p>
+            {% for opt in q.options %}
+                <label><input type="radio" name="q{{ q.id }}" value="{{ opt }}" required> {{ opt }}</label><br>
+            {% endfor %}
+            <br>
+        {% endfor %}
+        <input type="hidden" name="user_data" value="{{ user_data }}">
+        <input type="hidden" name="tool" value="{{ tool }}">
+        <button type="submit">Submit Answers</button>
+    </form>
+</body>
+</html>

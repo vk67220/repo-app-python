@@ -1,0 +1,23 @@
+[
+    {"id": 1, "question": "What does CI/CD stand for?", "options": ["Continuous Integration/Continuous Delivery", "Code Integration/Code Deployment", "Cloud Infrastructure/Container Deployment", "Continuous Improvement/Cloud Deployment"], "answer": "Continuous Integration/Continuous Delivery"},
+    {"id": 2, "question": "Which tool is commonly used for containerization?", "options": ["Docker", "Git", "Jenkins", "Ansible"], "answer": "Docker"},
+    {"id": 3, "question": "What is the primary purpose of Jenkins?", "options": ["Automate builds and deployment", "Container management", "Code repository", "Infrastructure provisioning"], "answer": "Automate builds and deployment"},
+    {"id": 4, "question": "Which language is Ansible written in?", "options": ["Python", "Go", "Ruby", "Java"], "answer": "Python"},
+    {"id": 5, "question": "What file format does Docker use to define environments?", "options": ["Dockerfile", "Dockercompose", "Dockeryaml", "Dockerenv"], "answer": "Dockerfile"},
+    {"id": 6, "question": "Which of these is not a DevOps tool?", "options": ["Photoshop", "GitLab", "Kubernetes", "Travis CI"], "answer": "Photoshop"},
+    {"id": 7, "question": "Which command lists running Docker containers?", "options": ["docker ps", "docker run", "docker images", "docker exec"], "answer": "docker ps"},
+    {"id": 8, "question": "Which tool is used for infrastructure as code?", "options": ["Terraform", "Prometheus", "Grafana", "Docker"], "answer": "Terraform"},
+    {"id": 9, "question": "Which of these tools is used for orchestration?", "options": ["Kubernetes", "Jenkins", "Git", "SonarQube"], "answer": "Kubernetes"},
+    {"id": 10, "question": "What is the purpose of Prometheus?", "options": ["Monitoring", "Deployment", "Version Control", "Containerization"], "answer": "Monitoring"},
+    {"id": 11, "question": "Which is a popular source control system?", "options": ["Git", "Jenkins", "Ansible", "Docker"], "answer": "Git"},
+    {"id": 12, "question": "What is Helm used for?", "options": ["Kubernetes package management", "Docker image scanning", "CI/CD pipelines", "Monitoring"], "answer": "Kubernetes package management"},
+    {"id": 13, "question": "Which DevOps phase involves 'automated testing'?", "options": ["Continuous Testing", "Monitoring", "Planning", "Build"], "answer": "Continuous Testing"},
+    {"id": 14, "question": "Which file is used to define Jenkins pipelines?", "options": ["Jenkinsfile", "pipeline.yaml", "build.xml", "jenkins.config"], "answer": "Jenkinsfile"},
+    {"id": 15, "question": "Which of the following is not related to CI/CD?", "options": ["Adobe XD", "CircleCI", "Travis CI", "GitHub Actions"], "answer": "Adobe XD"},
+    {"id": 16, "question": "Which tool is used for configuration management?", "options": ["Ansible", "Docker", "Grafana", "Vault"], "answer": "Ansible"},
+    {"id": 17, "question": "What does YAML stand for?", "options": ["YAML Ain’t Markup Language", "Yet Another Markup Language", "Your Application Markup Language", "YAML Application Machine Language"], "answer": "YAML Ain’t Markup Language"},
+    {"id": 18, "question": "Which tool can manage secrets in DevOps?", "options": ["Vault", "Docker", "Terraform", "Nagios"], "answer": "Vault"},
+    {"id": 19, "question": "Which tool visualizes metrics in DevOps?", "options": ["Grafana", "SonarQube", "Jenkins", "Git"], "answer": "Grafana"},
+    {"id": 20, "question": "Which protocol is used by Git?", "options": ["SSH", "HTTP", "HTTPS", "All of the above"], "answer": "All of the above"}
+  ]
+  
