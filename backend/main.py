@@ -10,7 +10,7 @@ import urllib.parse
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="frontend/static"), name="static")
+#app.mount("/static", StaticFiles(directory="frontend/static"), name="static")
 templates = Jinja2Templates(directory="frontend/templates")
 
 # ---------- MySQL Connection ----------
