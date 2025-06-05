@@ -17,7 +17,8 @@ services:
 
   backend:
     build:
-      context: backend/Dockerfile
+      context: .
+      dockerfile: backend/Dockerfile
     container_name: kastro-backend
     ports:
       - "8000:8000"
