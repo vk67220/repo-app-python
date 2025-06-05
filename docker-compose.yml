@@ -11,7 +11,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./backend/database/init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
       - kastro-net
 
@@ -26,12 +26,14 @@ services:
       - mysql
     environment:
       DB_HOST: mysql
-      DB_PORT: 3306
       DB_NAME: kastro_exam_db
       DB_USER: root
       DB_PASSWORD: rootpass
     networks:
       - kastro-net
+    volumes:
+      - ./backend:/app/backend
+      - ./frontend/templates:/app/frontend/templates
 
 networks:
   kastro-net:
