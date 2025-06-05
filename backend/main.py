@@ -1,6 +1,5 @@
 from fastapi import FastAPI, Request, Form
 from fastapi.responses import HTMLResponse
-from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import random
 import json
@@ -10,7 +9,10 @@ import urllib.parse
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="frontend/static"), name="static")
+# Static folder is not present, so we skip mounting it
+# app.mount("/static", StaticFiles(directory="frontend/static"), name="static")
+
+# Set templates directory
 templates = Jinja2Templates(directory="frontend/templates")
 
 # ---------- MySQL Connection ----------
@@ -51,7 +53,7 @@ async def start_exam(request: Request,
                      email: str = Form(...),
                      tool: str = Form(...)):
     tool_name = "AWS" if tool == "aws" else "DevOps"
-    question_file = f"questions/{tool}_questions.json"
+    question_file = f"backend/database/questions/{tool}_questions.json"
     
     with open(question_file, "r") as f:
         questions = json.load(f)
@@ -79,7 +81,7 @@ async def submit_exam(request: Request):
     form = await request.form()
     user_data = json.loads(urllib.parse.unquote(form["user_data"]))
     tool = form["tool"]
-    question_file = f"questions/{tool}_questions.json"
+    question_file = f"backend/database/questions/{tool}_questions.json"
 
     with open(question_file, "r") as f:
         questions = json.load(f)
@@ -93,7 +95,6 @@ async def submit_exam(request: Request):
             if form[key] == answers_dict[qid]:
                 score += 1
 
-    # Save to database
     try:
         conn = get_db_connection()
         cursor = conn.cursor()
