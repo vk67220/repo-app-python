@@ -28,21 +28,16 @@
 
 FROM python:3.10-slim
 
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
 
-# Copy requirements first
-COPY backend/requirements.txt .
-
+COPY backend/requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy backend source files
-COPY backend/ .
-
-# Copy frontend folder explicitly
-COPY frontend ./frontend
+COPY backend/ ./
+COPY frontend/ ./frontend/
 
 EXPOSE 8000
 
