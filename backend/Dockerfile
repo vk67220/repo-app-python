@@ -8,6 +8,9 @@ ENV PYTHONUNBUFFERED 1
 # Set working directory
 WORKDIR /app
 
+COPY backend/ ./backend/
+COPY frontend/templates ./frontend/templates
+
 # Copy dependencies
 COPY requirements.txt .
 
